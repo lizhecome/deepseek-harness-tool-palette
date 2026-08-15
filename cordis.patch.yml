@@ -1,0 +1,19 @@
+# From this repository checkout, install the bundle with:
+#   dsh plugin --profile <web|headless> add --ignore-workspace-root-check .
+
+- insert:
+    - id: tool-palette
+      name: '@lizhecome/dsh-tool-palette'
+      config:
+        alwaysVisible:
+          - read
+          - glob
+          - grep
+          - exit_plan_mode
+          - todo_write
+        maxResults: 8
+        maxQueryChars: 400
+        descriptionMaxChars: 240
+
+    - id: tool-palette-invariant
+      name: '@lizhecome/dsh-tool-palette/invariant'
